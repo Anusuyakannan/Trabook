@@ -1,161 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Landing Page - Travel</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Logo" class="logo" />
+        <span class="brand-name">Travelly</span>
+      </div>
 
-  <!-- Header -->
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">TravelX</div>
-      <nav>
-        <ul>
+      <nav class="nav">
+        <ul class="nav-list">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <a href="#" class="btn">Sign Up</a>
+
+      <div class="cta">
+        <a class="btn btn-outline" href="#">Log in</a>
+        <a class="btn btn-primary" href="#">Book Now</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Get started your exciting <span>journey</span> with us</h1>
-        <p>A team of experienced tourism professionals will provide you with the best travel plan.</p>
-        <a href="#" class="btn">Discover Now</a>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title">Plan your <span class="accent">perfect</span> escape</h1>
+        <p class="hero-sub">We craft memorable journeys — tailored itineraries, curated stays, and exclusive deals. Travel smarter, travel safer.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#">Get Started</a>
+          <a class="btn btn-ghost" href="#">View Plans</a>
+        </div>
+
+        <div class="meta-row">
+          <div class="meta-item"><strong>500+</strong><span>Destinations</span></div>
+          <div class="meta-item"><strong>10k+</strong><span>Happy Travelers</span></div>
+          <div class="meta-item"><strong>24/7</strong><span>Support</span></div>
+        </div>
       </div>
-      <div class="hero-image">
-        <img src="images/hero.png" alt="Travel Hero">
+
+      <div class="hero-media">
+        <img src="images/hero.png" alt="Hero" class="hero-img" />
       </div>
     </div>
   </section>
 
-  <!-- Things to Do -->
-  <section class="things">
-    <div class="container">
+  <!-- THINGS TO DO / FEATURES -->
+  <section class="features">
+    <div class="container section-head">
       <h2>Things you need to do</h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="images/flight.png" alt="Flight Booking">
-          <h3>Flight Booking</h3>
-        </div>
-        <div class="card">
-          <img src="images/hotel.png" alt="Hotel & Resort">
-          <h3>Hotel & Resort</h3>
-        </div>
-        <div class="card">
-          <img src="images/insurance.png" alt="Travel Insurance">
-          <h3>Travel Insurance</h3>
-        </div>
-      </div>
+      <p class="muted">One-stop shop — flights, hotels, insurance and more.</p>
+    </div>
+
+    <div class="container features-grid">
+      <article class="feature">
+        <img src="images/flight.png" alt="Flight" />
+        <h3>Flight Booking</h3>
+        <p>Search & compare multiple airlines in seconds.</p>
+      </article>
+
+      <article class="feature">
+        <img src="images/hotel.png" alt="Hotel" />
+        <h3>Hotel & Resort</h3>
+        <p>Handpicked stays with flexible cancellation.</p>
+      </article>
+
+      <article class="feature">
+        <img src="images/insurance.png" alt="Insurance" />
+        <h3>Travel Insurance</h3>
+        <p>Reliable coverage so you travel with confidence.</p>
+      </article>
     </div>
   </section>
 
-  <!-- Deals -->
+  <!-- DEALS -->
   <section class="deals">
-    <div class="container">
-      <h2>Exclusive <span>deals & discounts</span></h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="images/deal1.png" alt="Deal 1">
-          <h3>Paris</h3>
-          <p>Starting from $499</p>
+    <div class="container section-head">
+      <h2>Exclusive <span class="accent">deals & discounts</span></h2>
+    </div>
+
+    <div class="container deals-grid">
+      <div class="deal-card">
+        <img src="images/deal1.png" alt="">
+        <div class="deal-body">
+          <h4>Paris Getaway</h4>
+          <p class="price">From $499</p>
         </div>
-        <div class="card">
-          <img src="images/deal2.png" alt="Deal 2">
-          <h3>London</h3>
-          <p>Starting from $599</p>
+      </div>
+
+      <div class="deal-card">
+        <img src="images/deal2.png" alt="">
+        <div class="deal-body">
+          <h4>London Explorer</h4>
+          <p class="price">From $599</p>
         </div>
-        <div class="card">
-          <img src="images/deal3.png" alt="Deal 3">
-          <h3>Dubai</h3>
-          <p>Starting from $399</p>
+      </div>
+
+      <div class="deal-card">
+        <img src="images/deal3.png" alt="">
+        <div class="deal-body">
+          <h4>Dubai Luxury</h4>
+          <p class="price">From $399</p>
         </div>
-        <div class="card">
-          <img src="images/deal4.png" alt="Deal 4">
-          <h3>Singapore</h3>
-          <p>Starting from $699</p>
+      </div>
+
+      <div class="deal-card">
+        <img src="images/deal4.png" alt="">
+        <div class="deal-body">
+          <h4>Singapore Special</h4>
+          <p class="price">From $699</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Vacation Plans -->
+  <!-- VACATION PLANS -->
   <section class="plans">
-    <div class="container">
-      <h2>Best <span>vacation plans</span></h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="images/plan1.png" alt="Plan 1">
-          <h3>Bali Adventure</h3>
+    <div class="container section-head">
+      <h2>Best <span class="accent">vacation plan</span></h2>
+    </div>
+
+    <div class="container plans-grid">
+      <div class="plan-card">
+        <img src="images/plan1.png" alt="">
+        <div class="plan-info">
+          <h4>Bali Adventure</h4>
+          <p>7 days · Hotels · Activities</p>
         </div>
-        <div class="card">
-          <img src="images/plan2.png" alt="Plan 2">
-          <h3>Swiss Alps</h3>
+      </div>
+
+      <div class="plan-card">
+        <img src="images/plan2.png" alt="">
+        <div class="plan-info">
+          <h4>Swiss Alps</h4>
+          <p>5 days · Ski & Chalet</p>
         </div>
-        <div class="card">
-          <img src="images/plan3.png" alt="Plan 3">
-          <h3>Thailand Escape</h3>
+      </div>
+
+      <div class="plan-card">
+        <img src="images/plan3.png" alt="">
+        <div class="plan-info">
+          <h4>Thailand Escape</h4>
+          <p>6 days · Beaches & Culture</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
+  <!-- TESTIMONIALS -->
   <section class="testimonials">
-    <div class="container">
-      <h2>What people say <span>about us</span></h2>
-      <div class="card">
-        <img src="images/user1.png" alt="Customer">
-        <p>"Amazing trip! Everything was well planned."</p>
+    <div class="container section-head">
+      <h2>What people say <span class="accent">about us</span></h2>
+    </div>
+
+    <div class="container testimonial-grid">
+      <div class="testimonial-card">
+        <img src="images/user1.png" alt="User">
+        <blockquote>“Amazing trip! Everything was well planned. Friendly guides and great value.”</blockquote>
+        <p class="author">— Anu S.</p>
       </div>
+      <!-- you can duplicate testimonial-card for more -->
     </div>
   </section>
 
-  <!-- Blog -->
+  <!-- BLOG -->
   <section class="blog">
-    <div class="container">
-      <h2>Get update with <span>latest blog</span></h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="images/blog1.png" alt="Blog 1">
-          <h3>Top 10 beaches to visit</h3>
-        </div>
-        <div class="card">
-          <img src="images/blog2.png" alt="Blog 2">
-          <h3>How to travel on a budget</h3>
-        </div>
-        <div class="card">
-          <img src="images/blog3.png" alt="Blog 3">
-          <h3>Best foods around the world</h3>
-        </div>
-      </div>
+    <div class="container section-head">
+      <h2>Get update with <span class="accent">latest blog</span></h2>
+    </div>
+
+    <div class="container blog-grid">
+      <article class="blog-card">
+        <img src="images/blog1.png" alt="">
+        <h4>Top 10 beaches to visit</h4>
+      </article>
+
+      <article class="blog-card">
+        <img src="images/blog2.png" alt="">
+        <h4>How to travel on a budget</h4>
+      </article>
+
+      <article class="blog-card">
+        <img src="images/blog3.png" alt="">
+        <h4>Best foods around the world</h4>
+      </article>
     </div>
   </section>
 
-  <!-- Subscribe -->
+  <!-- SUBSCRIBE -->
   <section class="subscribe">
-    <div class="container">
-      <h2>Subscribe and get exclusive deals & offers</h2>
-      <form>
-        <input type="email" placeholder="Enter your email">
-        <button type="submit" class="btn">Subscribe</button>
+    <div class="container subscribe-inner">
+      <h3>Subscribe and get exclusive deals & offers</h3>
+      <form class="subscribe-form" action="#" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email" required />
+        <button class="btn btn-primary">Subscribe</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 TravelX. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="logo" class="logo-sm" />
+        <p>Travelly — reliable, traditional travel planning with modern convenience.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Cancellation</a></li>
+          <li><a href="#">Insurance</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>© 2025 Travelly. All rights reserved.</p>
     </div>
   </footer>
 
